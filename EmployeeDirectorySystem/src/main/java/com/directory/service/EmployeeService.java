@@ -10,6 +10,7 @@ public interface EmployeeService
     //save method added
     String saveEmp(Employee employee);
 
+    //getalldata method added
     List<Employee> getAllEmpData();
 
     Employee getEmpById(int id);
