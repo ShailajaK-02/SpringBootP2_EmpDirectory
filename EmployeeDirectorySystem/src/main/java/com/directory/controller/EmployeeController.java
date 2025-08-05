@@ -46,7 +46,7 @@ public class EmployeeController {
         return new ResponseEntity<>("Deleted",HttpStatus.OK);
     }
 
-
+    //update api
     @PutMapping("/updateEmp/{id}")
     public ResponseEntity<Employee> updateEmp(@PathVariable("id") int id, @RequestBody Employee employee){
       Employee updatedEmp  = employeeService.updateEmp(id,employee);
