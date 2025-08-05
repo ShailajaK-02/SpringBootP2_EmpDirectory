@@ -7,9 +7,14 @@ import java.util.List;
 
 public interface EmployeeService
 {
+    //save method added
     String saveEmp(Employee employee);
 
     List<Employee> getAllEmpData();
 
     Employee getEmpById(int id);
+
+    String deleteEmp(int id);
+
+    Employee updateEmp(int id,Employee newEmp);
 }
