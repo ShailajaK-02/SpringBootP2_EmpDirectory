@@ -13,6 +13,7 @@ public interface EmployeeService
     //getalldata method added
     List<Employee> getAllEmpData();
 
+    //getbyid method added
     Employee getEmpById(int id);
 
     String deleteEmp(int id);
