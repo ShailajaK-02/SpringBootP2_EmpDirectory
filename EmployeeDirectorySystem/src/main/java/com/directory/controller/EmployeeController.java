@@ -38,4 +38,18 @@ public class EmployeeController {
         Employee empById = employeeService.getEmpById(id);
         return new ResponseEntity<>(empById,HttpStatus.OK);
     }
+
+    //delete api
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<String> deleteById(@PathVariable("id") int id){
+        employeeService.deleteEmp(id);
+        return new ResponseEntity<>("Deleted",HttpStatus.OK);
+    }
+
+
+    @PutMapping("/updateEmp/{id}")
+    public ResponseEntity<Employee> updateEmp(@PathVariable("id") int id, @RequestBody Employee employee){
+      Employee updatedEmp  = employeeService.updateEmp(id,employee);
+      return new ResponseEntity<>(updatedEmp,HttpStatus.OK);
+    }
 }
