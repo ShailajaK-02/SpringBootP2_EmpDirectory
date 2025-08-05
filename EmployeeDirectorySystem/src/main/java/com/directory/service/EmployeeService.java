@@ -16,6 +16,7 @@ public interface EmployeeService
     //getbyid method added
     Employee getEmpById(int id);
 
+    //delete method added
     String deleteEmp(int id);
 
     Employee updateEmp(int id,Employee newEmp);
