@@ -51,6 +51,7 @@ public class EmployeeServiceImpl implements EmployeeService
         return "Employee deleted";
     }
 
+    //update operation implemented
     @Override
     public Employee updateEmp(int id, Employee newEmp) {
         Employee employee = repository.findById(id).orElseThrow(()->new NullPointerException("Data not found"+id));
