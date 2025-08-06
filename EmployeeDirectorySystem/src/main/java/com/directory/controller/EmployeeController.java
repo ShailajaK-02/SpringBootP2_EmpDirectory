@@ -21,8 +21,9 @@ public class EmployeeController {
     @PostMapping("/addEmp")
     public ResponseEntity<String> addEmp(@RequestBody Employee employee){
         System.err.println(employee);
-        employeeService.saveEmp(employee);
-        return new ResponseEntity<>("Data saved", HttpStatus.CREATED);
+        String msg = employeeService.saveEmp(employee);
+
+        return new ResponseEntity<>(msg, HttpStatus.CREATED);
     }
 
     //get all data
