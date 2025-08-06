@@ -14,6 +14,8 @@ public class Employee {
     private String name;
     private String designation;
     private long  salary;
+    private int yearOfBirth;
+    private String emailId;
 
     public int getId() {
         return id;
@@ -47,6 +49,22 @@ public class Employee {
         this.salary = salary;
     }
 
+    public int getYearOfBirth() {
+        return yearOfBirth;
+    }
+
+    public void setYearOfBirth(int yearOfBirth) {
+        this.yearOfBirth = yearOfBirth;
+    }
+
+    public String getEmailId() {
+        return emailId;
+    }
+
+    public void setEmailId(String emailId) {
+        this.emailId = emailId;
+    }
+
     @Override
     public String toString() {
         return "Employee{" +
@@ -54,6 +72,8 @@ public class Employee {
                 ", name='" + name + '\'' +
                 ", designation='" + designation + '\'' +
                 ", salary=" + salary +
+                ", yearOfBirth=" + yearOfBirth +
+                ", emailId='" + emailId + '\'' +
                 '}';
     }
 }
