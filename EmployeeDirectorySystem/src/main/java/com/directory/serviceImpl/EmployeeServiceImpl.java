@@ -30,6 +30,7 @@ public class EmployeeServiceImpl implements EmployeeService
         return "Hello "+ employee.getName() + " Your email id is : " + employee.getEmailId() ;
     }
 
+    //get all data implemented
     @Override
     public List<Employee> getAllEmpData() {
        List<Employee> employeeList = repository.findAll();
