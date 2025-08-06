@@ -37,6 +37,7 @@ public class EmployeeServiceImpl implements EmployeeService
        return employeeList;
     }
 
+    //getbyid implemented
     @Override
     public Employee getEmpById(int id) {
        Employee empbyId=  repository.findById(id).orElseThrow(() ->new NullPointerException("Employee withthis id is not found" + id));
